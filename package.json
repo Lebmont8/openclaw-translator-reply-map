@@ -1,0 +1,17 @@
+{
+  "name": "openclaw-translator-reply-map",
+  "version": "0.5.0",
+  "description": "Native cross-chat Telegram reply routing for an OpenClaw translator agent.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Lebmont8",
+  "repository": { "type": "git", "url": "git+https://github.com/Lebmont8/openclaw-translator-reply-map.git" },
+  "files": ["index.js", "core.js", "openclaw.plugin.json", "README.md", "SECURITY.md", "LICENSE"],
+  "scripts": {
+    "check": "node --check index.js && node --check core.js",
+    "test": "node --test index.test.js",
+    "verify": "npm run check && npm test"
+  },
+  "peerDependencies": { "openclaw": ">=2026.7.1" },
+  "openclaw": { "extensions": ["./index.js"] }
+}
